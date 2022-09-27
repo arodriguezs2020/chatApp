@@ -77,10 +77,13 @@ class __FormState extends State<_Form> {
             isPassword: true,
             textController: passCtrl,
           ),
-          BotonAzul(
-            onPressed: () {},
-            color: Colors.blue,
-            title: 'Ingrese',
+          Hero(
+            tag: "boton",
+            child: BotonAzul(
+              onPressed: () {},
+              color: Colors.blue,
+              title: 'Ingrese',
+            ),
           )
         ],
       ),
