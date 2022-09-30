@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 
 class BotonAzul extends StatelessWidget {
-  const BotonAzul(
-      {super.key,
-      required this.color,
-      required this.title,
-      required this.onPressed});
+  const BotonAzul({
+    super.key,
+    required this.color,
+    required this.title,
+    required this.onPressed,
+  });
 
   final MaterialColor color;
   final String title;
-  final Function() onPressed;
+  final Function()? onPressed;
 
   @override
   Widget build(BuildContext context) {
